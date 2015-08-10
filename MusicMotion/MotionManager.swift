@@ -268,7 +268,6 @@ class MotionManager {
         // Filter out unknown activity, stationary activity, and low confidence activity.
         return activities.filter { activity in
             return activity.hasActivitySignature &&
-                   !activity.stationary &&
                    activity.confidence.rawValue > CMMotionActivityConfidence.Low.rawValue
         }
     }
