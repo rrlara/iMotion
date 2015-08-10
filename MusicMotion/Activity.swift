@@ -90,9 +90,9 @@ struct Activity {
         return createLocalTimeDateStringFromDate(endDate)
     }
 
-//    var activityDuration: String {
-//        return createTimeStringFromSeconds(timeInterval)
-//    }
+    var activityDuration: String {
+        return createTimeStringFromSeconds(timeInterval)
+    }
 
 //    var distanceInMiles: String {
 ////        guard let distance = distance else { return "N/A" }
@@ -111,18 +111,26 @@ struct Activity {
 
     // MARK: Helper Functions
 
-//    private func createTimeStringFromSeconds(seconds: NSTimeInterval) -> String {
-//        let calendar = NSCalendar.currentCalendar()
+    private func createTimeStringFromSeconds(seconds: NSTimeInterval) -> String {
+        let calendar = NSCalendar.currentCalendar()
+
+        let startDate = NSDate()
+        let endDate = NSDate(timeInterval: seconds, sinceDate: startDate)
+        
+    
 //
-//        let startDate = NSDate()
-//        let endDate = NSDate(timeInterval: seconds, sinceDate: startDate)
-////
-////        let unitFlags: NSCalendarUnit = [.Hour, .Minute, .Second]
-//
-////        let conversionInfo = calendar.components(unitFlags, fromDate: startDate, toDate: endDate, options: [])
-//
-////        return String(format: "%dh %dm %ds", conversionInfo.hour, conversionInfo.minute, conversionInfo.second)
-//    }
+//        let unitFlags: NSCalendarUnit = [.Hour, .Minute, .Second]
+        let unitFlags: NSCalendarUnit =
+            .CalendarUnitHour   |
+            .CalendarUnitMinute |
+            .CalendarUnitSecond
+
+//        let conversionInfo = calendar.components(unitFlags, fromDate: startDate, toDate: endDate, options: [])
+        let conversionInfo = calendar.components(unitFlags, fromDate: startDate, toDate: endDate, options: nil)
+
+//        return String(format: "%dh %dm %ds", conversionInfo.hour, conversionInfo.minute, conversionInfo.second)
+        return String(format: "%dh %dm %ds", conversionInfo.hour, conversionInfo.minute, conversionInfo.second)
+    }
 
     private func createLocalTimeDateStringFromDate(date: NSDate) -> String {
         return NSDateFormatter.localizedStringFromDate(date, dateStyle: .MediumStyle, timeStyle: .MediumStyle)

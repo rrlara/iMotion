@@ -26,7 +26,7 @@ class HistoryViewController: UIViewController, UITableViewDataSource {
     let recentActivityItems: [(text: String, detailTextCreationHandler: Activity -> String)] = [
         ("Start Date",          { $0.startDateDescription }),
         ("End Date",            { $0.endDateDescription }),
-//        ("Duration",            { $0.activityDuration }),
+        ("Duration",            { $0.activityDuration }),
 //        ("Pace Per Mile",       { $0.calculatedPace }),
 //        ("Distance (Miles)",    { $0.distanceInMiles }),
         ("Distance (Meters)",   { String($0.distance ?? 0) }),
@@ -70,17 +70,14 @@ class HistoryViewController: UIViewController, UITableViewDataSource {
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(HistoryViewController.textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
-//        var cell: AnyObject = tableView.dequeueReusableCellWithIdentifier(HistoryViewController.textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
+
 
         let activity = motionManager.recentActivities[indexPath.section]
 
         let item = recentActivityItems[indexPath.row]
 
-//        cell.textLabel!.text = item.text
-//        cell.detailTextLabel!.text = item.detailTextCreationHandler(activity)
-//        cell.textLabel??.text = item.text
+
         cell.textLabel?.text = item.text
-//        cell.detailTextLabel??.text = item.detailTextCreationHandle(activity)
         cell.detailTextLabel?.text = item.detailTextCreationHandler(activity)
         //        cell.userInteractionEnabled = false
 

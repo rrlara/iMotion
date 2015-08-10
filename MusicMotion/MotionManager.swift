@@ -407,7 +407,7 @@ class MotionManager {
         let now = NSDate()
         
         let dateComponents = NSDateComponents()
-        dateComponents.setValue(-2, forComponent: NSCalendarUnit.CalendarUnitDay)
+        dateComponents.setValue(-1, forComponent: NSCalendarUnit.CalendarUnitDay)
         
         let options = NSCalendarOptions(rawValue: 0)
 
