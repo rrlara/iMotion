@@ -118,14 +118,11 @@ struct Activity {
         let endDate = NSDate(timeInterval: seconds, sinceDate: startDate)
         
     
-//
-//        let unitFlags: NSCalendarUnit = [.Hour, .Minute, .Second]
         let unitFlags: NSCalendarUnit =
             .CalendarUnitHour   |
             .CalendarUnitMinute |
             .CalendarUnitSecond
 
-//        let conversionInfo = calendar.components(unitFlags, fromDate: startDate, toDate: endDate, options: [])
         let conversionInfo = calendar.components(unitFlags, fromDate: startDate, toDate: endDate, options: nil)
 
 //        return String(format: "%dh %dm %ds", conversionInfo.hour, conversionInfo.minute, conversionInfo.second)
