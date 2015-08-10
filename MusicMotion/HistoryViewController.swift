@@ -28,7 +28,7 @@ class HistoryViewController: UIViewController, UITableViewDataSource {
         ("End Date",            { $0.endDateDescription }),
         ("Duration",            { $0.activityDuration }),
 //        ("Pace Per Mile",       { $0.calculatedPace }),
-//        ("Distance (Miles)",    { $0.distanceInMiles }),
+        ("Distance (Miles)",    { $0.distanceInMiles }),
         ("Distance (Meters)",   { String($0.distance ?? 0) }),
         ("Number of Steps",     { String($0.numberOfSteps ?? 0) }),
         ("Floors Ascended",     { String($0.floorsAscended ?? 0) }),

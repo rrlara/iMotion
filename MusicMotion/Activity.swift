@@ -110,18 +110,18 @@ struct Activity {
         return String(format: "%.7f", Double(distance!) * Activity.milesPerMeter)
     }
 
-    var calculatedPace: String {
-        if let distance = distance {
-            
-        }else{
-            return "N/A"
-        }
-
-        let miles = Double(distance!) * Activity.milesPerMeter
-        let paceInSecondsPerMile = timeInterval / miles
-
-        return createTimeStringFromSeconds(paceInSecondsPerMile)
-    }
+//    var calculatedPace: String {
+//        if let distance = distance {
+//            
+//        }else{
+//            return "N/A"
+//        }
+//
+//        let miles = Double(distance!) * Activity.milesPerMeter
+//        let paceInSecondsPerMile = timeInterval / miles
+//
+//        return createTimeStringFromSeconds(paceInSecondsPerMile)
+//    }
 
     // MARK: Helper Functions
 
