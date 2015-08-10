@@ -40,23 +40,29 @@ struct Activity {
 
         self.timeInterval = endDate.timeIntervalSinceDate(startDate)
 
-//        guard let pedometerData = pedometerData where activity.walking || activity.running else {
-//            return
-//        }
+        if let pedometerData = pedometerData {
+            activity.walking || activity.running
+        } else {
+            return
+        }
+        if let pedometerData = pedometerData {
+            activity.walking || activity.running
+            return
+        }
+        
+        numberOfSteps = pedometerData!.numberOfSteps.integerValue
 //
-//        numberOfSteps = pedometerData.numberOfSteps.integerValue
+        if let distance = pedometerData!.distance?.integerValue where distance > 0 {
+            self.distance = distance
+        }
 //
-//        if let distance = pedometerData.distance?.integerValue where distance > 0 {
-//            self.distance = distance
-//        }
+        if let floorsAscended = pedometerData!.floorsAscended?.integerValue {
+            self.floorsAscended = floorsAscended
+        }
 //
-//        if let floorsAscended = pedometerData.floorsAscended?.integerValue {
-//            self.floorsAscended = floorsAscended
-//        }
-//
-//        if let floorsDescended = pedometerData.floorsDescended?.integerValue {
-//            self.floorsDescended = floorsDescended
-//        }
+        if let floorsDescended = pedometerData!.floorsDescended?.integerValue {
+            self.floorsDescended = floorsDescended
+        }
     }
 
     // MARK: Computed Properties
@@ -94,20 +100,28 @@ struct Activity {
         return createTimeStringFromSeconds(timeInterval)
     }
 
-//    var distanceInMiles: String {
-////        guard let distance = distance else { return "N/A" }
-//
-//        return String(format: "%.7f", Double(distance) * Activity.milesPerMeter)
-//    }
+    var distanceInMiles: String {
+        if let distance = distance {
+            
+        }else{
+            return "N/A"
+        }
 
-//    var calculatedPace: String {
-////        guard let distance = distance else { return "N/A" }
-//
-//        let miles = Double(distance) * Activity.milesPerMeter
-//        let paceInSecondsPerMile = timeInterval / miles
-//
-//        return createTimeStringFromSeconds(paceInSecondsPerMile)
-//    }
+        return String(format: "%.7f", Double(distance!) * Activity.milesPerMeter)
+    }
+
+    var calculatedPace: String {
+        if let distance = distance {
+            
+        }else{
+            return "N/A"
+        }
+
+        let miles = Double(distance!) * Activity.milesPerMeter
+        let paceInSecondsPerMile = timeInterval / miles
+
+        return createTimeStringFromSeconds(paceInSecondsPerMile)
+    }
 
     // MARK: Helper Functions
 
@@ -124,8 +138,7 @@ struct Activity {
             .CalendarUnitSecond
 
         let conversionInfo = calendar.components(unitFlags, fromDate: startDate, toDate: endDate, options: nil)
-
-//        return String(format: "%dh %dm %ds", conversionInfo.hour, conversionInfo.minute, conversionInfo.second)
+        
         return String(format: "%dh %dm %ds", conversionInfo.hour, conversionInfo.minute, conversionInfo.second)
     }
 
