@@ -11,8 +11,9 @@
 		521B3CCB1B100B8C00A0C56A /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521B3CC51B100B8C00A0C56A /* HistoryViewController.swift */; };
 		521B3CCC1B100B8C00A0C56A /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521B3CC61B100B8C00A0C56A /* MotionManager.swift */; };
 		521B3CD31B100E9100A0C56A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521B3CC01B0FEFE600A0C56A /* Main.storyboard */; };
-		5249711C1B10380400ED19C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5249711B1B10380400ED19C7 /* Images.xcassets */; };
 		52B86B001B0FE99F00F341D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B86AFF1B0FE99F00F341D0 /* AppDelegate.swift */; };
+		E9E9EABF1B7976F400BEAA59 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9EABE1B7976F400BEAA59 /* LiveViewController.swift */; };
+		E9E9EAC11B797C3700BEAA59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E9EAC01B797C3700BEAA59 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,10 +22,11 @@
 		521B3CC51B100B8C00A0C56A /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		521B3CC61B100B8C00A0C56A /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		523913A21B014F7600B5C8F1 /* MusicMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5249711B1B10380400ED19C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		529074F11B143E2E0085CFF8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		52B86AFF1B0FE99F00F341D0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MusicMotion/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		52B86B181B0FEAB700F341D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MusicMotion/Info.plist; sourceTree = SOURCE_ROOT; };
+		E9E9EABE1B7976F400BEAA59 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		E9E9EAC01B797C3700BEAA59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				521B3CC51B100B8C00A0C56A /* HistoryViewController.swift */,
+				E9E9EABE1B7976F400BEAA59 /* LiveViewController.swift */,
 			);
 			name = "View Controller Classes";
 			sourceTree = "<group>";
@@ -76,11 +79,11 @@
 			isa = PBXGroup;
 			children = (
 				52B86AFF1B0FE99F00F341D0 /* AppDelegate.swift */,
+				E9E9EAC01B797C3700BEAA59 /* Images.xcassets */,
 				521B3CC01B0FEFE600A0C56A /* Main.storyboard */,
 				521B3CD01B100D8200A0C56A /* View Controller Classes */,
 				521B3CD11B100D9300A0C56A /* Data Model Classes */,
 				52B86B181B0FEAB700F341D0 /* Info.plist */,
-				5249711B1B10380400ED19C7 /* Images.xcassets */,
 			);
 			path = MusicMotion;
 			sourceTree = "<group>";
@@ -142,8 +145,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5249711C1B10380400ED19C7 /* Images.xcassets in Resources */,
 				521B3CD31B100E9100A0C56A /* Main.storyboard in Resources */,
+				E9E9EAC11B797C3700BEAA59 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +161,7 @@
 				521B3CCA1B100B8C00A0C56A /* Activity.swift in Sources */,
 				52B86B001B0FE99F00F341D0 /* AppDelegate.swift in Sources */,
 				521B3CCC1B100B8C00A0C56A /* MotionManager.swift in Sources */,
+				E9E9EABF1B7976F400BEAA59 /* LiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +268,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MusicMotion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -277,7 +280,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MusicMotion/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
