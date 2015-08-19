@@ -16,6 +16,9 @@ class HistoryViewController: UIViewController, UITableViewDataSource {
     let motionManager = MotionManager()
 
     @IBOutlet weak var historyTableView: UITableView!
+    
+    var dataLive = LiveViewController()
+    
 
     /**
         An array of title / detail text label creation handlers. The left hand

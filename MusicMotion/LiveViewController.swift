@@ -9,6 +9,10 @@
 import UIKit
 import CoreMotion
 
+class orale {
+    var time = 2
+}
+
 class LiveViewController: UIViewController {
     
 //    @IBOutlet weak var activityImageView: UIImageView!
@@ -17,8 +21,30 @@ class LiveViewController: UIViewController {
 //    @IBOutlet weak var distanceLabel: UILabel!
 //    @IBOutlet weak var altitudeLabel: UILabel!
     
+    var chale = orale()
+    
+    var daysHistory: Int!
+    
     @IBOutlet weak var activityImageViewImage: UIImageView!
     
+    @IBOutlet weak var slider: UISlider!
+    
+    @IBOutlet weak var sliderLabel: UILabel!
+    
+    
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        var currentValue = Int(sender.value)
+        
+        daysHistory = currentValue
+        
+        println(daysHistory)
+        
+        chale.time = currentValue
+        
+    
+        
+        sliderLabel.text = "\(currentValue)"
+    }
     
     let dataProcessingQueue = NSOperationQueue()
 //    let pedometer = CMPedometer()
@@ -28,6 +54,7 @@ class LiveViewController: UIViewController {
     let lengthFormatter = NSLengthFormatter()
     
     var altChange: Double = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,6 +122,17 @@ class LiveViewController: UIViewController {
         }
         
     }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+//        if (segue.identifier == "segueTest") {
+//            var svc = segue!.destinationViewController as secondViewController;
+//            
+//            svc.toPass = textField.text
+//            
+//        }
+//    }
+    
+
     
 }
 

@@ -56,6 +56,9 @@ class MotionManager {
     static let metersForSignificantAltitudeChange = 5.0
 
     static let maxPedometerSamples = 1
+    
+    
+    var age = orale()
 
     // MARK: Properties
 
@@ -405,8 +408,10 @@ class MotionManager {
     func queryForRecentActivityData(completionHandler: Void -> Void) {
         let now = NSDate()
         
+        
         let dateComponents = NSDateComponents()
-        dateComponents.setValue(-2, forComponent: NSCalendarUnit.CalendarUnitDay)
+//        dateComponents.setValue(-1, forComponent: NSCalendarUnit.CalendarUnitDay)
+        dateComponents.setValue(-24, forComponent: NSCalendarUnit.CalendarUnitHour)
         
         let options = NSCalendarOptions(rawValue: 0)
 
