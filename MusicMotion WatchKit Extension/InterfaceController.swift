@@ -51,12 +51,9 @@ class InterfaceController: WKInterfaceController {
                 
                 if data.confidence.rawValue > 0{
                     if data.running {
-
-//                        [self.currentActivityImage .setImage(UIImage(named: "run"))]
                         self.currentActivityImage.setImage(self.runnerImage)
                         self.currentActivityLabel.setText("running")
                     } else if data.cycling {
-//                        [self.currentActivityImage .setImage(UIImage(named: "cycle"))]
                         self.currentActivityImage.setImage(self.cycleImage)
                         self.currentActivityLabel.setText("cycling")
                     } else if data.walking {
@@ -64,17 +61,14 @@ class InterfaceController: WKInterfaceController {
                         self.currentActivityLabel.setText("walking")
                     }
                     else if data.stationary {
-//                        [self.currentActivityImage .setImage(UIImage(named: "stationary"))]
                         self.currentActivityImage.setImage(self.stationaryImage)
                         self.currentActivityLabel.setText("stationary")
                     }
                     else if data.automotive {
-//                        [self.currentActivityImage .setImage(UIImage(named: "automotive"))]
                         self.currentActivityImage.setImage(self.automotiveImage)
                         self.currentActivityLabel.setText("automotive")
                     }
                     else {
-//                        [self.currentActivityImage .setImage(UIImage(named: "nil"))]
                         self.currentActivityLabel.setText("no idea")
                     }
                 }
