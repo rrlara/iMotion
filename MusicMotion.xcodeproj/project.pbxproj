@@ -12,9 +12,48 @@
 		521B3CCC1B100B8C00A0C56A /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521B3CC61B100B8C00A0C56A /* MotionManager.swift */; };
 		521B3CD31B100E9100A0C56A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521B3CC01B0FEFE600A0C56A /* Main.storyboard */; };
 		52B86B001B0FE99F00F341D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B86AFF1B0FE99F00F341D0 /* AppDelegate.swift */; };
+		E91C32181B84112E00148A5F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C32171B84112E00148A5F /* InterfaceController.swift */; };
+		E91C321A1B84112E00148A5F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C32191B84112E00148A5F /* NotificationController.swift */; };
+		E91C321C1B84112E00148A5F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C321B1B84112E00148A5F /* GlanceController.swift */; };
+		E91C321E1B84112E00148A5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91C321D1B84112E00148A5F /* Images.xcassets */; };
+		E91C32221B84112E00148A5F /* MusicMotion WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = E91C32211B84112E00148A5F /* MusicMotion WatchKit App.app */; };
+		E91C322A1B84112E00148A5F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91C32281B84112E00148A5F /* Interface.storyboard */; };
+		E91C322C1B84112E00148A5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91C322B1B84112E00148A5F /* Images.xcassets */; };
+		E91C322F1B84112E00148A5F /* MusicMotion WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E91C32121B84112E00148A5F /* MusicMotion WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E9E9EABF1B7976F400BEAA59 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E9EABE1B7976F400BEAA59 /* LiveViewController.swift */; };
 		E9E9EAC11B797C3700BEAA59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E9EAC01B797C3700BEAA59 /* Images.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E91C32231B84112E00148A5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5239139A1B014F7600B5C8F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91C32201B84112E00148A5F;
+			remoteInfo = "MusicMotion WatchKit App";
+		};
+		E91C322D1B84112E00148A5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5239139A1B014F7600B5C8F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91C32111B84112E00148A5F;
+			remoteInfo = "MusicMotion WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E91C32361B84112E00148A5F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E91C322F1B84112E00148A5F /* MusicMotion WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		521B3CC11B0FEFE600A0C56A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,12 +64,30 @@
 		529074F11B143E2E0085CFF8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		52B86AFF1B0FE99F00F341D0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MusicMotion/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		52B86B181B0FEAB700F341D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MusicMotion/Info.plist; sourceTree = SOURCE_ROOT; };
+		E91C32121B84112E00148A5F /* MusicMotion WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MusicMotion WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91C32151B84112E00148A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E91C32161B84112E00148A5F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E91C32171B84112E00148A5F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E91C32191B84112E00148A5F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E91C321B1B84112E00148A5F /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		E91C321D1B84112E00148A5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E91C32211B84112E00148A5F /* MusicMotion WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicMotion WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91C32271B84112E00148A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E91C32291B84112E00148A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E91C322B1B84112E00148A5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E9E9EABE1B7976F400BEAA59 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		E9E9EAC01B797C3700BEAA59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5239139F1B014F7600B5C8F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91C320F1B84112E00148A5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,6 +120,8 @@
 			children = (
 				529074F11B143E2E0085CFF8 /* README.md */,
 				523913A41B014F7600B5C8F1 /* MusicMotion */,
+				E91C32131B84112E00148A5F /* MusicMotion WatchKit Extension */,
+				E91C32251B84112E00148A5F /* MusicMotion WatchKit App */,
 				523913A31B014F7600B5C8F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				523913A21B014F7600B5C8F1 /* MusicMotion.app */,
+				E91C32121B84112E00148A5F /* MusicMotion WatchKit Extension.appex */,
+				E91C32211B84112E00148A5F /* MusicMotion WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +149,45 @@
 			path = MusicMotion;
 			sourceTree = "<group>";
 		};
+		E91C32131B84112E00148A5F /* MusicMotion WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E91C32171B84112E00148A5F /* InterfaceController.swift */,
+				E91C32191B84112E00148A5F /* NotificationController.swift */,
+				E91C321B1B84112E00148A5F /* GlanceController.swift */,
+				E91C321D1B84112E00148A5F /* Images.xcassets */,
+				E91C32141B84112E00148A5F /* Supporting Files */,
+			);
+			path = "MusicMotion WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E91C32141B84112E00148A5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E91C32151B84112E00148A5F /* Info.plist */,
+				E91C32161B84112E00148A5F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E91C32251B84112E00148A5F /* MusicMotion WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E91C32281B84112E00148A5F /* Interface.storyboard */,
+				E91C322B1B84112E00148A5F /* Images.xcassets */,
+				E91C32261B84112E00148A5F /* Supporting Files */,
+			);
+			path = "MusicMotion WatchKit App";
+			sourceTree = "<group>";
+		};
+		E91C32261B84112E00148A5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E91C32271B84112E00148A5F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,15 +198,50 @@
 				5239139E1B014F7600B5C8F1 /* Sources */,
 				5239139F1B014F7600B5C8F1 /* Frameworks */,
 				523913A01B014F7600B5C8F1 /* Resources */,
+				E91C32361B84112E00148A5F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E91C322E1B84112E00148A5F /* PBXTargetDependency */,
 			);
 			name = MusicMotion;
 			productName = MusicMotion;
 			productReference = 523913A21B014F7600B5C8F1 /* MusicMotion.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E91C32111B84112E00148A5F /* MusicMotion WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91C32351B84112E00148A5F /* Build configuration list for PBXNativeTarget "MusicMotion WatchKit Extension" */;
+			buildPhases = (
+				E91C320E1B84112E00148A5F /* Sources */,
+				E91C320F1B84112E00148A5F /* Frameworks */,
+				E91C32101B84112E00148A5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E91C32241B84112E00148A5F /* PBXTargetDependency */,
+			);
+			name = "MusicMotion WatchKit Extension";
+			productName = "MusicMotion WatchKit Extension";
+			productReference = E91C32121B84112E00148A5F /* MusicMotion WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		E91C32201B84112E00148A5F /* MusicMotion WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E91C32341B84112E00148A5F /* Build configuration list for PBXNativeTarget "MusicMotion WatchKit App" */;
+			buildPhases = (
+				E91C321F1B84112E00148A5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MusicMotion WatchKit App";
+			productName = "MusicMotion WatchKit App";
+			productReference = E91C32211B84112E00148A5F /* MusicMotion WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
 		};
 /* End PBXNativeTarget section */
 
@@ -119,6 +254,12 @@
 				TargetAttributes = {
 					523913A11B014F7600B5C8F1 = {
 						CreatedOnToolsVersion = 7.0;
+					};
+					E91C32111B84112E00148A5F = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E91C32201B84112E00148A5F = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -136,6 +277,8 @@
 			projectRoot = "";
 			targets = (
 				523913A11B014F7600B5C8F1 /* MusicMotion */,
+				E91C32111B84112E00148A5F /* MusicMotion WatchKit Extension */,
+				E91C32201B84112E00148A5F /* MusicMotion WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +290,24 @@
 			files = (
 				521B3CD31B100E9100A0C56A /* Main.storyboard in Resources */,
 				E9E9EAC11B797C3700BEAA59 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91C32101B84112E00148A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91C32221B84112E00148A5F /* MusicMotion WatchKit App.app in Resources */,
+				E91C321E1B84112E00148A5F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E91C321F1B84112E00148A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91C322A1B84112E00148A5F /* Interface.storyboard in Resources */,
+				E91C322C1B84112E00148A5F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +326,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E91C320E1B84112E00148A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91C321A1B84112E00148A5F /* NotificationController.swift in Sources */,
+				E91C32181B84112E00148A5F /* InterfaceController.swift in Sources */,
+				E91C321C1B84112E00148A5F /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E91C32241B84112E00148A5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E91C32201B84112E00148A5F /* MusicMotion WatchKit App */;
+			targetProxy = E91C32231B84112E00148A5F /* PBXContainerItemProxy */;
+		};
+		E91C322E1B84112E00148A5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E91C32111B84112E00148A5F /* MusicMotion WatchKit Extension */;
+			targetProxy = E91C322D1B84112E00148A5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		521B3CC01B0FEFE600A0C56A /* Main.storyboard */ = {
@@ -174,6 +358,14 @@
 				521B3CC11B0FEFE600A0C56A /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E91C32281B84112E00148A5F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E91C32291B84112E00148A5F /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -288,6 +480,64 @@
 			};
 			name = Release;
 		};
+		E91C32301B84112E00148A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "MusicMotion WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E91C32311B84112E00148A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MusicMotion WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E91C32321B84112E00148A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				IBSC_MODULE = MusicMotion_WatchKit_Extension;
+				INFOPLIST_FILE = "MusicMotion WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		E91C32331B84112E00148A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = MusicMotion_WatchKit_Extension;
+				INFOPLIST_FILE = "MusicMotion WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -308,6 +558,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E91C32341B84112E00148A5F /* Build configuration list for PBXNativeTarget "MusicMotion WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91C32321B84112E00148A5F /* Debug */,
+				E91C32331B84112E00148A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E91C32351B84112E00148A5F /* Build configuration list for PBXNativeTarget "MusicMotion WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E91C32301B84112E00148A5F /* Debug */,
+				E91C32311B84112E00148A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
