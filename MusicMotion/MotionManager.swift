@@ -62,7 +62,7 @@ class MotionManager {
 
     // MARK: Properties
 
-//    weak var delegate: MotionContextDelegate?
+    weak var delegate: MotionContextDelegate?
 //
 //    var currentContext = MotionContext.LowIntensity
 
@@ -345,6 +345,7 @@ class MotionManager {
                 segments.append(activitySegment)
             }
         }
+//        println(segments)
 
         return segments
     }
@@ -378,6 +379,7 @@ class MotionManager {
             dispatch_group_enter(group)
 
             pedometer.queryPedometerDataFromDate(activity.startDate, toDate: endDate) { pedometerData, error in
+                println(pedometerData)
                 dispatch_async(queue) {
                     let activity = Activity(activity: activity, startDate: activity.startDate, endDate: endDate, pedometerData: pedometerData)
 

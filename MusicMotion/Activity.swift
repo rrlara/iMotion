@@ -45,22 +45,19 @@ struct Activity {
         } else {
             return
         }
-        if let pedometerData = pedometerData {
-            activity.walking || activity.running
-            return
-        }
-        
-        numberOfSteps = pedometerData!.numberOfSteps.integerValue
+//        numberOfSteps = pedometerData!.numberOfSteps.integerValue
+        numberOfSteps = pedometerData?.numberOfSteps.integerValue
 //
-        if let distance = pedometerData!.distance?.integerValue where distance > 0 {
+        if let distance = pedometerData?.distance?.integerValue where distance > 0 {
             self.distance = distance
         }
+
 //
-        if let floorsAscended = pedometerData!.floorsAscended?.integerValue {
+        if let floorsAscended = pedometerData?.floorsAscended?.integerValue {
             self.floorsAscended = floorsAscended
         }
 //
-        if let floorsDescended = pedometerData!.floorsDescended?.integerValue {
+        if let floorsDescended = pedometerData?.floorsDescended?.integerValue {
             self.floorsDescended = floorsDescended
         }
     }
@@ -110,18 +107,18 @@ struct Activity {
         return String(format: "%.7f", Double(distance!) * Activity.milesPerMeter)
     }
 
-//    var calculatedPace: String {
-//        if let distance = distance {
-//            
-//        }else{
-//            return "N/A"
-//        }
-//
-//        let miles = Double(distance!) * Activity.milesPerMeter
-//        let paceInSecondsPerMile = timeInterval / miles
-//
-//        return createTimeStringFromSeconds(paceInSecondsPerMile)
-//    }
+    var calculatedPace: String {
+        if let distance = distance {
+            
+        }else{
+            return "N/A"
+        }
+
+        let miles = Double(distance!) * Activity.milesPerMeter
+        let paceInSecondsPerMile = timeInterval / miles
+
+        return createTimeStringFromSeconds(paceInSecondsPerMile)
+    }
 
     // MARK: Helper Functions
 

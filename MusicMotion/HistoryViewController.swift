@@ -30,7 +30,7 @@ class HistoryViewController: UIViewController, UITableViewDataSource {
         ("Start Date",          { $0.startDateDescription }),
         ("End Date",            { $0.endDateDescription }),
         ("Duration",            { $0.activityDuration }),
-//        ("Pace Per Mile",       { $0.calculatedPace }),
+        ("Pace Per Mile",       { $0.calculatedPace }),
         ("Distance (Miles)",    { $0.distanceInMiles }),
         ("Distance (Meters)",   { String($0.distance ?? 0) }),
         ("Number of Steps",     { String($0.numberOfSteps ?? 0) }),
@@ -82,7 +82,7 @@ class HistoryViewController: UIViewController, UITableViewDataSource {
 
         cell.textLabel?.text = item.text
         cell.detailTextLabel?.text = item.detailTextCreationHandler(activity)
-        //        cell.userInteractionEnabled = false
+        cell.userInteractionEnabled = false
 
         return cell
     }

@@ -576,6 +576,7 @@
 				E91C32331B84112E00148A5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E91C32351B84112E00148A5F /* Build configuration list for PBXNativeTarget "MusicMotion WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +585,7 @@
 				E91C32311B84112E00148A5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
