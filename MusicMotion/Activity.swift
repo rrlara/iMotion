@@ -28,6 +28,8 @@ struct Activity {
     var distance: Int?
     var floorsAscended: Int?
     var floorsDescended: Int?
+    
+//    var distanceOfSteps: Int?
 
     // MARK: Initializers
 
@@ -104,7 +106,29 @@ struct Activity {
             return "N/A"
         }
 
-        return String(format: "%.7f", Double(distance!) * Activity.milesPerMeter)
+        return String(format: "%.2f", Double(distance!) * Activity.milesPerMeter)
+    }
+    
+    var distanceInFeet: String {
+        if let distance = distance {
+            
+        }else{
+            return "N/A"
+        }
+        
+        return String(format: "%.0f", Double(distance!) * 3.28084)
+    }
+    
+    var distanceOfSteps: String {
+        if let distance = distance {
+            
+        }else{
+            return "N/A"
+        }
+        
+        let distanceOfEachStep = Double(distance!) / Double(self.numberOfSteps!)
+        
+        return String(format: "%.2f", distanceOfEachStep * 3.28084)
     }
 
     var calculatedPace: String {
