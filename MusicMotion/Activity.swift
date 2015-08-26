@@ -47,18 +47,17 @@ struct Activity {
         } else {
             return
         }
-//        numberOfSteps = pedometerData!.numberOfSteps.integerValue
         numberOfSteps = pedometerData?.numberOfSteps.integerValue
-//
+
         if let distance = pedometerData?.distance?.integerValue where distance > 0 {
             self.distance = distance
         }
 
-//
+
         if let floorsAscended = pedometerData?.floorsAscended?.integerValue {
             self.floorsAscended = floorsAscended
         }
-//
+
         if let floorsDescended = pedometerData?.floorsDescended?.integerValue {
             self.floorsDescended = floorsDescended
         }
